@@ -1,0 +1,294 @@
+/* 
+Montserrat:200,300,400 
+tło przycisków :  rgba(252, 81, 81, 0.815);
+h2 color:  rgba(252, 81, 81, 0.815);
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1600px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 200;
+    color: rgb(71, 71, 71);
+    padding: 50px 20px;
+    /* width: 80%; */
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+}
+
+/* pomarańczowy nagłówek */
+h2 {
+    color: rgba(255, 44, 44, 0.815);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+
+h3 {
+    color: rgb(5, 5, 5);
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+h3 .dots {
+    color: rgba(255, 44, 44, 0.815);
+    letter-spacing: 3px;
+}
+
+h4 {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 5px;
+
+}
+
+p {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: rgb(121, 121, 121);
+    line-height: 2rem;
+}
+
+section,
+footer {
+    padding: 70px 6%;
+
+    ;
+}
+
+button {
+    display: block;
+    margin: 100px auto 10px auto;
+    width: 200px;
+    color: rgb(221, 221, 221);
+    background-color: rgba(252, 81, 81, 0.815);
+    padding: 15px 10px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: rgb(252, 81, 81);
+    border: 1px solid rgba(252, 81, 81, 0.89);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: rgb(221, 221, 221);
+    font-weight: 200;
+    text-align: center;
+}
+
+.triangle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 500px solid rgba(252, 81, 81, 0.603);
+    border-left: 500px solid rgba(0, 0, 0, 0);
+    /* opacity: 0.5; */
+}
+
+
+
+/* 
+---------------------
+BIBLIOTEKI zewnętrzen
+---------------------
+ */
+
+
+
+/* 
+--------------
+HEADER section 
+--------------
+*/
+.header {
+    height: 100vh;
+    background-image: url(img/header.jpg);
+    background-size: cover;
+    background-position: 50%;
+    filter: brightness(1.4);
+    border-bottom: 1px solid rgba(194, 194, 194, 0.308);
+}
+
+.header button:hover+.subtitle {
+    color: rgb(240, 240, 240);
+}
+
+.header .subtitle {
+    margin: 0 auto;
+    width: 200px;
+}
+
+/* 
+--------------
+ABOUT section 
+--------------
+*/
+.about {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    /* max-height: 40vh; */
+    padding-right: 0;
+}
+
+.about .section-content {
+    flex-basis: 75%;
+    padding: 100px 6%;
+
+}
+
+
+.about .section-addition {
+    background: rgba(233, 233, 233, 0.52);
+    background-image: url(img/addition-img.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    flex-basis: 25%;
+    min-height: 400px;
+    filter: brightness(1.2);
+    position: relative;
+    overflow: hidden;
+    border-left: 1px solid rgba(194, 194, 194, 0.308);
+}
+
+
+
+/* 
+--------------
+FEATURES section 
+--------------
+*/
+
+.features {
+    /* padding-top: 0; */
+    background-color: rgba(241, 241, 241, 0.596);
+    min-height: 40vh;
+    position: relative;
+
+}
+
+
+.features h2,
+.features h3 {
+    text-align: center;
+}
+
+.features .features-items {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.features .features-items .feature {
+    flex-basis: 30%;
+
+}
+
+.features .features-items .feature i {
+    font-size: 5.5rem;
+    color: rgba(252, 81, 81, 0.924);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.938);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.features .features-items .feature p {
+    text-align: center;
+}
+
+/* 
+--------------
+RESPONSIVE section 
+--------------
+*/
+
+.responsive {
+    display: flex;
+    padding-left: 0;
+    padding-bottom: 50px;
+    ;
+}
+
+.responsive .section-addition {
+    position: relative;
+    order: 1;
+    width: 30%;
+}
+
+.responsive .section-addition img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 100%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    font-size: 15rem;
+    color: #fff;
+    filter: grayscale(0.9) brightness(1.2);
+    /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.664); */
+}
+
+.responsive .section-content {
+    width: 75%;
+    position: relative;
+    order: 2;
+}
+
+.responsive .section-addition .triangle {
+    border-bottom: 300px solid rgba(252, 81, 81, 0.603);
+    border-right: 300px solid rgba(0, 0, 0, 0);
+    border-left: 0;
+    bottom: -50px;
+    left: 0px;
+}
+
+/* 
+--------------
+TEAM section 
+--------------
+*/
+
+.team {
+    background: #000;
+}
