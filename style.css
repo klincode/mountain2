@@ -21,6 +21,7 @@ ul {
 
 .wrapper {
     max-width: 1600px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -42,6 +43,7 @@ h2 {
     font-size: 1.2rem;
     letter-spacing: 1px;
     padding: 5px 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.075);
 }
 
 h3 {
@@ -96,7 +98,8 @@ footer {
     ;
 }
 
-button {
+button,
+input[type="button"] {
     display: block;
     margin: 100px auto 10px auto;
     width: 200px;
@@ -123,6 +126,7 @@ button:hover {
     color: rgb(221, 221, 221);
     font-weight: 200;
     text-align: center;
+    padding: 3px;
 }
 
 .triangle {
@@ -136,7 +140,9 @@ button:hover {
     /* opacity: 0.5; */
 }
 
-
+.hidden {
+    opacity: 0;
+}
 
 /* 
 ---------------------
@@ -399,8 +405,150 @@ REGISTER section
 */
 
 .register {
+    margin-top: -4px;
+    border-top: 1px solid rgb(206, 218, 230);
+    border-bottom: 1px solid rgba(206, 218, 230, 0.8);
     text-align: center;
-    background: rgb(45, 54, 107);
-    margin-top: 0;
-    padding-top: 0;
+    background: rgba(51, 57, 106, 0.514);
+
+}
+
+.register .form-container {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    /* width: 60%; */
+    /* background: #000; */
+    margin: 0 auto;
+    /* width: 500px; */
+    min-width: 80%;
+    margin-bottom: 20px;
+}
+
+
+.register h3 {
+    font-size: 2.2rem;
+    color: rgb(238, 238, 238);
+    padding: 10px 10px 5% 10px;
+    text-shadow: 0 0 1px #000;
+}
+
+.register input[type="text"],
+.register input[type="password"] {
+    background: rgba(83, 87, 121, 0.514);
+    line-height: 2.2rem;
+    font-size: 1.8rem;
+    padding: 8px;
+    border: 1px solid rgb(74, 85, 160);
+    border-radius: 4px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 170px;
+    height: 3rem;
+    margin-right: 5px;
+
+}
+
+
+.register input[type="text"]:focus,
+.register input[type="password"]:focus {
+    border: 1px solid rgba(252, 81, 81, 0.603);
+    outline: none;
+
+}
+
+::placeholder {
+    color: #fff;
+    font-weight: 200px;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+
+input[type="button"] {
+    /* margin: 100px auto 10px auto; */
+    margin: 0;
+    line-height: 0;
+    height: 2.2rem;
+    /* padding: 15px 10px; */
+    border: 1px solid rgba(199, 199, 199, 0.637);
+    outline: none;
+    width: 170px;
+}
+
+input[type="button"]:hover+.form-info {
+    /* transform: translateX(-50%) scale(1.1) */
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.555);
+}
+
+input[type="button"]:hover {
+    /* margin: 100px auto 10px auto; */
+    margin: 0;
+    line-height: 0;
+    height: 2.2rem;
+    /* padding: 15px 10px; */
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.486);
+    color: #fff;
+    ;
+}
+
+.register .form-container .register-button-area {
+    position: relative;
+}
+
+
+.register .form-container .form-info {
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #fff;
+    letter-spacing: 2px;
+    /* min-width: 50px; */
+    width: 150px;
+    transition: 0.3s;
+}
+
+
+/* 
+--------------
+FOOTER section 
+--------------
+*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>div {
+    flex-basis: 22%;
+    /* background: rgba(0, 0, 0, 0.171); */
+    padding: 10px 2px;
+    font-size: 1rem;
+    text-align: center;
+    ;
+}
+
+footer ul {
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+footer newsletter-form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer button {
+    margin: 0;
+    padding: 15px 10px;
+    height: 30px;
+    width: 30px;
+
 }
