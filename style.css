@@ -34,6 +34,7 @@ h1 {
     text-align: center;
     letter-spacing: 2px;
     word-spacing: 7px;
+    text-shadow: 0 0 1px rgba(10, 10, 10, 0.274);
 }
 
 /* pomarańczowy nagłówek */
@@ -242,7 +243,6 @@ FEATURES section
 
 .features .features-items .feature {
     flex-basis: 30%;
-
 }
 
 .features .features-items .feature i {
@@ -329,7 +329,6 @@ TEAM section
 
 .team .members .member {
     flex-grow: 0;
-    flex-grow: 0;
     width: 20%;
     margin: 0 auto;
     ;
@@ -396,7 +395,7 @@ AWESOME section
     max-width: 100%;
     width: 20%;
     padding-top: 50px;
-    opacity: 0.6;
+    opacity: 0.8;
     ;
 }
 
@@ -425,7 +424,7 @@ REGISTER section
     /* background: #000; */
     margin: 0 auto;
     /* width: 500px; */
-    min-width: 80%;
+    /* min-width: 70%; */
     margin-bottom: 20px;
 }
 
@@ -448,7 +447,7 @@ REGISTER section
     color: #fff;
     letter-spacing: 2px;
     text-align: center;
-    width: 170px;
+    width: 25%;
     height: 3rem;
     margin-right: 5px;
 
@@ -478,7 +477,7 @@ input[type="button"] {
     /* padding: 15px 10px; */
     border: 1px solid rgba(199, 199, 199, 0.637);
     outline: none;
-    width: 170px;
+
 }
 
 input[type="button"]:hover+.form-info {
@@ -499,6 +498,7 @@ input[type="button"]:hover {
 
 .register .form-container .register-button-area {
     position: relative;
+
 }
 
 
@@ -545,7 +545,7 @@ footer ul {
 footer ul li {
     text-align: center;
     padding-top: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     color: rgb(121, 121, 121);
     /* line-height: 2rem; */
@@ -618,4 +618,261 @@ footer .social-media i {
 footer .social-media i:hover {
     color: #000;
     transform: scale(1.3);
+}
+
+/* 
+--------------
+MEDIA QUERIES  
+--------------
+*/
+
+@media all and (max-width: 1199px) {
+    html {
+        font-size: 12px;
+        ;
+    }
+
+    h1 {
+        padding: 40px 50px;
+    }
+
+    .header button {
+        margin: 70% auto 10px auto;
+        width: 450px;
+        font-size: 2rem;
+    }
+
+    .header h1 {
+        padding: 50px 50px;
+    }
+
+    .header .subtitle {
+        width: 350px;
+        font-size: 2rem;
+        ;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .awesome img {
+
+        width: 25%;
+
+    }
+}
+
+@media all and (max-width: 768px) {
+    .header button {
+        margin: 70% auto 10px auto;
+        width: 350px;
+        font-size: 2rem;
+        ;
+    }
+
+    .header h1 {
+        padding: 50px 50px;
+    }
+
+    .header .subtitle {
+        width: 350px;
+        font-size: 2rem;
+        ;
+    }
+
+    .responsive .section-addition {
+        width: 25%;
+        margin-right: 50px;
+    }
+
+    .responsive .section-addition img {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+
+    }
+
+    .features .features-items .feature {
+        flex-basis: 33%;
+
+    }
+
+    .register .form-container {
+        flex-direction: column;
+    }
+
+    .register input[type="text"],
+    .register input[type="password"] {
+        width: 80%;
+        margin: 5px;
+    }
+
+    .register .form-container .register-button-area {
+        margin-top: 50px;
+
+    }
+}
+
+@media all and (max-width: 575px) {
+    html {
+        font-size: 11px;
+    }
+
+    section,
+    footer {
+        padding: 20px 6%;
+
+    }
+
+    h1 {
+        color: #000;
+        padding: 70px 30px;
+        font-size: 3.1rem;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        text-shadow: 0 0 2px rgba(10, 10, 10, 0.274), 0 0 2px rgba(163, 163, 163, 0.274);
+    }
+
+    .header .subtitle {
+        font-size: 1.5rem;
+        text-shadow: 0 0 2px #000, 0 0 2px #000;
+    }
+
+    .header {
+        background-position: 60%;
+        filter: brightness(1.25);
+
+    }
+
+    .header button {
+        margin: 150px auto 10px auto;
+    }
+
+    .header .subtitle {
+        color: #fff;
+        /* font-size: 1.5rem; */
+        ;
+    }
+
+    .about h3 {
+        text-align: left;
+
+    }
+
+    .about .section-content {
+
+        padding: 100px 6%;
+        flex-basis: 100%;
+        text-align: justify;
+    }
+
+
+
+    .about .section-addition {
+        display: none;
+    }
+
+    .features .features-items {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .features .features-items .feature i {
+        font-size: 6rem;
+
+    }
+
+    .features .features-items .feature {
+        padding-top: 20px;
+    }
+
+    .responsive .section-addition img {
+        display: none;
+    }
+
+    .responsive .section-addition {
+        position: relative;
+        order: 1;
+        width: 0%;
+        z-index: -1;
+    }
+
+    .responsive .section-content {
+        width: 100%;
+        position: relative;
+        order: 2;
+    }
+
+    .responsive .section-addition .triangle {
+        border-bottom: 200px solid rgba(252, 81, 81, 0.603);
+        border-right: 200px solid rgba(0, 0, 0, 0);
+
+    }
+
+    .team .members {
+        flex-direction: column;
+    }
+
+    .team .members .member {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .team .members .member img {
+        width: 200px;
+    }
+
+    .team .logos {
+        justify-content: space-between;
+
+        padding: 50px 1% 0px 1%;
+    }
+
+    .team .logos i {
+        padding: 20px;
+        width: 16%;
+        font-size: 3.2rem;
+        color: #fff;
+        opacity: 0.9;
+
+        text-align: center;
+    }
+
+    .awesome img {
+        width: 50%;
+        padding-top: 50px;
+        opacity: 0.9;
+        ;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    footer>div {
+        flex-basis: 50%;
+        /* background: rgba(0, 0, 0, 0.171); */
+        padding: 20px 2px;
+        text-align: left;
+    }
+
+    footer ul {
+        padding-top: 15px;
+    }
+
+    footer ul li {
+        text-align: center;
+        padding-top: 5px;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        color: rgb(121, 121, 121);
+        /* line-height: 2rem; */
+    }
+
+    footer .social-media i {
+        font-size: 2.2rem;
+
+    }
+
 }
