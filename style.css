@@ -371,7 +371,7 @@ TEAM section
     width: 16%;
     font-size: 5rem;
     color: #fff;
-    opacity: 0.7;
+    opacity: 0.9;
 
     text-align: center;
 }
@@ -396,6 +396,8 @@ AWESOME section
     max-width: 100%;
     width: 20%;
     padding-top: 50px;
+    opacity: 0.6;
+    ;
 }
 
 /* 
@@ -536,19 +538,84 @@ footer>div {
 }
 
 footer ul {
-    padding-top: 10px;
+
     font-size: 1rem;
 }
 
-footer newsletter-form {
-    margin: 0 auto;
+footer ul li {
     text-align: center;
+    padding-top: 20px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: rgb(121, 121, 121);
+    /* line-height: 2rem; */
+}
+
+
+
+footer .newsletter-form {
+    width: 90%;
+    height: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+
+    /* text-align: center; */
+}
+
+footer input[type="text"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    min-width: 80%;
+    width: 80%;
+    outline: none;
+    border: 1px solid rgba(185, 185, 185, 0.603);
+    ;
 }
 
 footer button {
+    position: absolute;
+    top: 0;
+    left: calc(80% - 2px);
     margin: 0;
-    padding: 15px 10px;
     height: 30px;
-    width: 30px;
+    width: 35px;
+    text-align: center;
+    border: 1px solid rgba(185, 185, 185, 0.603);
+    /* line-height: 2rem; */
+}
 
+footer button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+    font-size: 2rem;
+    outline: none;
+
+}
+
+footer .social-media {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer .social-media i {
+    flex-basis: 15%;
+    font-size: 2rem;
+    padding: 5%;
+    margin: 0;
+    color: rgba(168, 168, 168, 0.808);
+    ;
+}
+
+footer .social-media i:hover {
+    color: #000;
+    transform: scale(1.3);
 }
