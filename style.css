@@ -25,8 +25,8 @@ ul {
 }
 
 h1 {
-    font-size: 5rem;
-    font-weight: 200;
+    font-size: 4.5rem;
+    font-weight: 300;
     color: rgb(71, 71, 71);
     padding: 50px 20px;
     /* width: 80%; */
@@ -34,7 +34,8 @@ h1 {
     text-align: center;
     letter-spacing: 2px;
     word-spacing: 7px;
-    text-shadow: 0 0 1px rgba(10, 10, 10, 0.274);
+    text-shadow: 0 0 1px rgba(10, 10, 10, 0.973);
+    max-width: 600px;
 }
 
 /* pomarańczowy nagłówek */
